@@ -14,7 +14,7 @@ with open('./Data/depthdata.csv','r') as depthdata:
         for line in read_depth_data:
             write_depth_data.writerow(line)
             activedepthdata.flush()  # Forces immediate write to disk every second
-            time.sleep(0.1)
+            time.sleep(1)
 
 # cannot write the plotting program here because python executes line by line so it will first
 # write the entire csv then move to plotting which defeats the whole purpose
