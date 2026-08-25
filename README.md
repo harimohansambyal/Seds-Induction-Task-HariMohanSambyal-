@@ -11,7 +11,7 @@ This repository contains my solutions for induction tasks 1 and 2
    - read csv file using pandas
    - "pd.to_numeric(errors='coerce')" to parse out invalid  strings (like `#VALUE!`) into `NaN`, followed by '.ffill().bfill()` to reconstruct continuous values.
    - fixes missing values, non numerical values before sending data to statistical filter
-   ('\n')
+     
   
   > Part 2: Outlier Detection & LWMA Noise Filtering
   - Used a Mean Absolute Deviation window check made with For loops and If else statements to catch sensor spikes and extreme
