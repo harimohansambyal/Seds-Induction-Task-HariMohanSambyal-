@@ -26,7 +26,7 @@ This repository contains my solutions for induction tasks 1 and 2
   - Executed this function with  Matplotlib's `FuncAnimation` to plot a live line graph updating every second.
 
   
-  > For Testing Live Plotting Capability from CSV file > created a live_csv_generator using built-in CSV module, which reads
+  - For Testing Live Plotting Capability from CSV file > created a live_csv_generator using built-in CSV module, which reads
   given depth data file, and writes it to a new csv file in intervals of 1 seconds, mimicking the inputs given by a sensor
   for testing the live data plotting code.
 
