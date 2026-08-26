@@ -30,9 +30,23 @@ This repository contains my solutions for induction tasks 1 and 2
   given depth data file, and writes it to a new csv file in intervals of 1 seconds, mimicking the inputs given by a sensor
   for testing the live data plotting code.
 
-  
-  > Resultant graph contains significantly less noise than raw data plot and doesn't contain missing/erroneous or outlier
+  - Resultant graph contains significantly less noise than raw data plot and doesn't contain missing/erroneous or outlier
   values
+
+>NOTE: To run this code :
+
+>Want to view static plotting
+- Save the Task 1 folder as it is.  [ie. save the Live_Data_Plotter.py, live_csv_generator.py in one folder. in this folder add a folder named Data, inside the Data folder save the raw csv data file (depthdata.csv) and activedepthdata.csv]. [activedepthdata.csv is same file as depthdata.csv just rewritten to new file by my csv generator]
+- run Live_Data_plotter.py.
+- can also run static plot on depthdata.csv, just change activedepthdata.csv to depthdata.csv in csv
+
+>Want to view live plotting and don't have access to a real time updating csv file.
+- Save as above
+- Delete activedepthdata.csv
+- Run live_csv_generator.py it will generate a new activedepthdata.csv row by row in real time in the Data folder.
+- Run the Live_Data_plotter.py in a new terminal alongside previous script.
+
+> If you have your own file, make sure to change the file name appropriately in data plotter ; if you want to save files in your own way make sure to change the directories to files in code
 
 ## Task 2 : Keeping Watch Over Odysseus
 
