@@ -40,12 +40,12 @@ This repository contains my solutions for induction tasks 1 and 2
 -circuit built in TinkerCAD.
 -dummy on vessel navigation system with manual safety protocol.
 
--Finite State Machine with 5 States:
-1.Open Sea : default state
-2.Storm : activated when LDR sensor drops below half (voltage from voltage divider circuit<550V),triggers blinking led.
-3.Charybdis : activated when distance sensor detects object closer than 100cm, triggers buzzer.
-4.Wrecked : triggered when timer reaches 5 seconds in Storm/Charybdis ; requires restart.
-5.Anchor Dropped : stops the timer in Charybdis and Storm states and resets it to 0 when button pressed, works in open sea aswell.
+>Finite State Machine with 5 States:
+- 1.Open Sea : default state
+- 2.Storm : activated when LDR sensor drops below half (voltage from voltage divider circuit<550V),triggers blinking led.
+- 3.Charybdis : activated when distance sensor detects object closer than 100cm, triggers buzzer.
+- 4.Wrecked : triggered when timer reaches 5 seconds in Storm/Charybdis ; requires restart.
+- 5.Anchor Dropped : stops the timer in Charybdis and Storm states and resets it to 0 when button pressed, works in open sea aswell.
 
 ## Hardware and Wiring 
 
