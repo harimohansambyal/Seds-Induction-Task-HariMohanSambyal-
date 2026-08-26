@@ -61,12 +61,13 @@ This repository contains my solutions for induction tasks 1 and 2
 >Code Logic
 - imported relevant library(Liquid Crystal), declared relevant variables 
 - defined a function to get distance input from Ping))) distance sensor
-- defined a function to toggle button ON and OFF
+- defined a function to read button toggle ON and OFF
 - in void setup(), set relevant pinmode, initiated lcd screen
-- in void loop() start with an if else statement, if wrecked state is detected from previous loop, sets machine to wrecked mode again and loops back to start, making it a lockout state essentially.
-- else sets the state to open sea, defines variable which read and store data from the sensor. 
-followed by two while loops with conditions measuring sensor data against threshold values, starts a timer, activates led or buzzer depending on state, checks for push button toggle and enters another nested while loop initiating the Anchor dropped state, which remains until push button is toggled off. 
-- if timer exceeds 5 seconds set state to wrecked and exits to end of void loop() using goto, after which the initial if statements become perpetually true.
+- in void loop() ; if wrecked state is detected from previous loop, sets machine to wrecked mode again and loops back to start, making it a lockout state essentially.
+- else executes the remaining code ; sets the state to open sea, defines variable which read and store data from the sensor. 
+followed by two while loops for STORM and CHARYBDIS states,
+- while sensor values precede threshold, displays the state on screen, starts a timer, activates led or buzzer depending on state, checks for push button toggle in each loop, if pressed, enters another nested while loop initiating the Anchor dropped state, which remains until push button is toggled off. 
+- if timer exceeds 5 seconds set state to wrecked and exits to end of void loop() using goto, after which it loops to if statements becoming perpetually true.
 
 - NOTE: out of Storm and Charybdis, whichever state is entered first remains active and its timer continues until sensor data becomes greater than threshold values. during this time the other state cannot override the current ongoing state.(excluding anchor dropped)
 
