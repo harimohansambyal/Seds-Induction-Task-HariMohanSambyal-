@@ -58,7 +58,7 @@ This repository contains my solutions for induction tasks 1 and 2
 | **Buzzer** | Digital 7 | Dual-Frequency Siren (1000Hz / 500Hz) activates in Charybdis state|
 | **Pushbutton** | Analog A2 | State-Toggle Safety Override |
 
-##Code Logic
+>Code Logic
 - imported relevant library(Liquid Crystal), declared relevant variables 
 - defined a function to get distance input from Ping))) distance sensor
 - defined a function to toggle button ON and OFF
