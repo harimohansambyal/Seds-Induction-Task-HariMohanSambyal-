@@ -36,9 +36,9 @@ This repository contains my solutions for induction tasks 1 and 2
 
 ## Task 2 : Keeping Watch Over Odysseus
 
--Code written in Arduino C++, using LiquidCrystal library.
--circuit built in TinkerCAD.
--dummy on vessel navigation system with manual safety protocol.
+- Code written in Arduino C++, using LiquidCrystal library.
+- circuit built in TinkerCAD.
+- dummy on vessel navigation system with manual safety protocol.
 
 >Finite State Machine with 5 States:
 - 1.Open Sea : default state
@@ -59,12 +59,12 @@ This repository contains my solutions for induction tasks 1 and 2
 | **Pushbutton** | Analog A2 | State-Toggle Safety Override |
 
 ##Code Logic
--imported relevant library(Liquid Crystal), declared relevant variables 
--defined a function to get distance input from Ping))) distance sensor
--defined a function to toggle button ON and OFF
--in void setup(), set relevant pinmode, initiated lcd screen
--in void loop() start with an if else statement, if wrecked state is detected from previous loop, sets machine to wrecked mode again and loops back to start, making it a lockout state essentially.
--else sets the state to open sea, defines variable which read and store data from the sensor. 
+- imported relevant library(Liquid Crystal), declared relevant variables 
+- defined a function to get distance input from Ping))) distance sensor
+- defined a function to toggle button ON and OFF
+- in void setup(), set relevant pinmode, initiated lcd screen
+- in void loop() start with an if else statement, if wrecked state is detected from previous loop, sets machine to wrecked mode again and loops back to start, making it a lockout state essentially.
+- else sets the state to open sea, defines variable which read and store data from the sensor. 
 followed by two while loops with conditions measuring sensor data against threshold values, starts a timer, activates led or buzzer depending on state, checks for push button toggle and enters another nested while loop initiating the Anchor dropped state, which remains until push button is toggled off. 
 - if timer exceeds 5 seconds set state to wrecked and exits to end of void loop() using goto, after which the initial if statements become perpetually true.
 
