@@ -36,9 +36,10 @@ This repository contains my solutions for induction tasks 1 and 2
 >NOTE: To run this code :
 
 >Want to view static plotting
-- Save the Task 1 folder as it is.  [ie. save the Live_Data_Plotter.py, live_csv_generator.py in one folder. in this folder add a folder named Data, inside the Data folder save the raw csv data file (depthdata.csv) and activedepthdata.csv]. [activedepthdata.csv is same file as depthdata.csv just rewritten to new file by my csv generator]
+- Save the Task 1 folder as it is.  [ie. save the Live_Data_Plotter.py, live_csv_generator.py in one folder. in this folder add a folder named Data, inside the Data folder save the raw csv data file (depthdata.csv) and activedepthdata.csv]. 
 - run Live_Data_plotter.py.
 - can also run static plot on depthdata.csv, just change activedepthdata.csv to depthdata.csv in csv
+- NOTE: activedepthdata.csv is same file as depthdata.csv just rewritten to new file by my csv generator, you can check.
 
 >Want to view live plotting and don't have access to a real time updating csv file.
 - Save as above
