@@ -51,7 +51,7 @@ This repository contains my solutions for induction tasks 1 and 2
 
 | Component | Arduino Pin | Function |
 | :--- | :--- | :--- |
-| **16x2 LCD Display** | RS:12,RW:GND, EN:11, D4:5, D5:4, D6:3, D7:2 | UI Status Display |
+| **16x2 LCD Display** | RS:12,RW:GND, EN:11, D4:5, D5:4, D6:3, D7:2 | Display Current State of The Machine |
 | **Centre Tap in LDR Photoresistor circuit** | Analog A1 | Storm Detection Threshold (< 550V) |
 | **LED Anode** | Analog A0 | Gives Flashing Visual Alert in Storm|
 | **Ping))) Ultrasonic Distance Sensor** | Digital 6 | Proximity threshold (< 100 cm) |
