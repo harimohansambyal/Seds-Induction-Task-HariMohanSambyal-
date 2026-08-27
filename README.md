@@ -64,6 +64,8 @@ This repository contains my solutions for induction tasks 1 and 2
 
 ## Hardware and Wiring 
 
+> TINKERCAD link : https://www.tinkercad.com/things/8NBeTxSUt2p-seds-induction-task-2026a8ps1148h-hari-mohan-
+
 | Component | Arduino Pin | Function |
 | :--- | :--- | :--- |
 | **16x2 LCD Display** | RS:12,RW:GND, EN:11, D4:5, D5:4, D6:3, D7:2 | Display Current State of The Machine |
